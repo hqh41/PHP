@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		
+		
+		<title>Change Your Password</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />		
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		
+	</head>
+	<body>
+	  <header class="codrops-header">
+				<h1>Change Your Password</h1>
+			</header>
+		<div class="container" style="text-align: center">
+                  <section class="content bgcolor-1" >
+                    
+        <form action="changePass.php" method="POST">
+        	
+        <span class="input input--haruki">
+          <input class="input__field input__field--haruki" type="password" id="oldpassword" name="oldpassword"/>
+          <label class="input__label input__label--haruki" for="input-2">
+            <span class="input__label-content input__label-content--haruki">Old Password</span>
+          </label>
+        </span>
+        
+        <br>
+        <span class="input input--haruki">
+          <input class="input__field input__field--haruki" type="password" id="newpassword" name="newpassword"/>
+          <label class="input__label input__label--haruki" for="input-2">
+            <span class="input__label-content input__label-content--haruki">New Password</span>
+          </label>
+        </span>
+        
+        <br>
+        <span class="input input--haruki">
+          <input class="input__field input__field--haruki" type="password" id="confirmPassword" name="confirmPassword"/>
+          <label class="input__label input__label--haruki" for="input-2">
+            <span class="input__label-content input__label-content--haruki">Confirm Password</span>
+          </label>
+        </span>
+       
+        <br><br><br>
+        
+		      <div class="container">		  
+		        <div class="button-effect">
+		          <input type="submit" value="Submit"/>
+		           </div>
+		       </div>
+	      
+       </form>
+    </section>
+
+      </div>
+		<script src="classie.js"></script>
+		<script>
+			(function() {
+				
+				if (!String.prototype.trim) {
+					(function() {
+						
+						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+						String.prototype.trim = function() {
+							return this.replace(rtrim, '');
+						};
+					})();
+				}
+
+				[].slice.call( document.querySelectorAll('input.input__field' ) ).forEach( function( inputEl ) {
+					
+					if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'input--filled' );
+					}
+
+					// events:
+					inputEl.addEventListener( 'focus', onInputFocus );
+					inputEl.addEventListener( 'blur', onInputBlur );
+				} );
+
+				function onInputFocus( ev ) {
+					classie.add( ev.target.parentNode, 'input--filled' );
+				}
+
+				function onInputBlur( ev ) {
+					if( ev.target.value.trim() === '' ) {
+						classie.remove( ev.target.parentNode, 'input--filled' );
+					}
+				}
+			})();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+
+h1 {position:absolute;
+    color: red;
+    left:44%;}
+
+a {
+    position:absolute;
+    right:38%;
+}
+
+#dialog {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+}
+
+#form {
+    float: left;
+    background-color:#FA8072;
+    box-shadow: 10px 10px 5px #888888;
+    margin: 0px;
+    border-radius: 10px;
+    width: 24%;
+    padding: 20px;
+}
+
+#bb {
+    float: left;
+    width: 38%;
+    height: 100%;
+}
+
+.logo {
+    position: absolute;
+    left: 38%;
+    width:200px;height:80px;background:url(funny.jpg) no-repeat;
+}
+
+.textRight { text-align: right !important; }

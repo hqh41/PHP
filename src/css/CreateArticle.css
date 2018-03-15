@@ -1,0 +1,207 @@
+body {
+    background-image:url(../photo/background.jpeg);
+    
+}
+
+
+.logo{
+          text-align:center;
+}
+
+.form1{
+    text-align:center;
+}
+
+
+input[type=textarea]{
+    border: 2px solid rgb(196, 28, 91);
+    width:400px;
+    height: 200px;
+}
+input[type=textarea]:focus {
+    border: 3px solid grey;
+}
+
+h3.title{
+    color: rgb(196, 28, 91);
+    position: absolute;
+    left: 400px;
+     top: 118px;
+     
+}
+
+h3.content{
+    color: rgb(196, 28, 91);
+    position: absolute;
+    left: 400px;
+    top: 123px;
+}
+
+h3.selectA{
+    color: rgb(196, 28, 91);
+    position: absolute;
+    left: 520px;
+     top: 465px;
+}
+
+
+input[type=file]{
+    color:rgb(196, 28, 91);
+    position: absolute;
+    left: 520px;
+     top: 480px;
+}
+
+h3.tag{
+    color: rgb(196, 28, 91);
+    position: relative;
+    top:40px;
+}
+
+span.tag{
+    color: rgb(196, 28, 91);
+    
+}
+
+input[type=button]{
+    color: rgb(196, 28, 91);
+  background-color: white;
+ position: absolute;
+    left: 730px;
+     top:520px;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-decoration: none;
+  
+  line-height: 20px;
+  height: 20px;
+  padding: 0 40px;
+  margin: 0;
+  display: inline-block;
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition-property: all;
+          transition-property: all;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+input[type=reset]{
+    color: rgb(196, 28, 91);
+  background-color: white;
+ position: relative;
+     top: 20px;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-decoration: none;
+  
+  line-height: 20px;
+  height: 20px;
+  padding: 0 20px;
+  margin: 0;
+  display: inline-block;
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition-property: all;
+          transition-property: all;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+input[type=submit]{
+    color: rgb(196, 28, 91);
+  background-color: white;
+ position: relative;
+     top: 20px;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-decoration: none;
+  
+  line-height: 20px;
+  height: 20px;
+  padding: 0 20px;
+  margin: 0;
+  display: inline-block;
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition-property: all;
+          transition-property: all;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+
+
+.bonjour{
+    color:white;
+    position: absolute;
+    left: 650px;
+     top: 80px;
+}
+
+.photoInOpen{
+    width:400px;
+    height: 300px;
+    text-align:center;
+
+    
+}
+
+
+
+.heart {
+  background: url(../photo/web_heart_animation.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  position: absolute;
+  left:-14px;
+  background-size:1450px;
+  
+}
+.heart:hover{
+  background-position: right;
+}
+.likeCount{
+  margin-top: 13px;
+  margin-left: 28px;
+  font-size: 16px;
+  color: #999999
+}               
+
+.heart1 {
+  background: url(../photo/web_heart_animation.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  position: absolute;
+  left:-14px;
+  background-size:1450px; 
+ 
+}
+
+
+.feed{
+     position: absolute;
+     left:10px;
+     top: 10px;
+}

@@ -1,0 +1,33 @@
+{
+    "name": "ensiie/tp-web",
+    "type": "project",
+    "scripts": {
+        "project.setup": "./bin/php7install.sh && ./bin/apache2config.sh && composer install && composer db.up",
+        "db.up": "sudo service postgresql start && ./database/up.sh",
+        "db.down": "./database/down.sh && sudo service postgresql stop",
+        "db.reset": "composer db.down && composer db.up",
+        "test": "composer test.nbsp && composer test.unit && composer test.md && composer test.lint",
+        "test.unit": "./vendor/bin/phpunit",
+        "test.lint": "php ./vendor/bin/phpcs ./src -s",
+        "test.lint.fix": "php ./vendor/bin/phpcbf ./src",
+        "test.md": "./vendor/bin/phpmd ./src text ./phpmd.xml",
+        "test.nbsp": "./bin/check_non_breakable_spaces.sh",
+        "test.dependencies": "./bin/check_dependencies.sh",
+        "logs": "tail -f ~/lib/apache2/log/*.log"
+    },
+    "require": {
+        "phpunit/phpunit": "^6.0",
+        "phpmd/phpmd": "^2.6",
+        "squizlabs/php_codesniffer": "^2.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Something\\": "src/Something/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SomethingTest\\": "src/Something/"
+        }
+    }
+}

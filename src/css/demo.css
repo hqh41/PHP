@@ -1,0 +1,136 @@
+@import url(http://fonts.useso.com/css?family=Raleway:200,500,700,800);
+
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+
+
+
+body {
+	background: #f0efee;
+	color: rgb(196, 28, 91);
+	font-weight: 500;
+	font-size: 1.05em;
+	font-family: 'Raleway', Arial, sans-serif;
+}
+
+
+
+.container {
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+.content {
+	font-size: 150%;
+	padding: 3em 0;
+}
+
+.content h2 {
+	margin: 0 0 2em;
+	opacity: 0.1;
+}
+
+.content p {
+	margin: 1em 0;
+	padding: 5em 0 0 0;
+	font-size: 0.65em;
+}
+
+.bgcolor-1 { background: #f0efee; }
+
+
+body .nomargin-bottom {
+	margin-bottom: 0;
+}
+
+/* Header */
+.codrops-header {
+	text-align: center;
+	
+	padding: 3em 190px 4em;
+	letter-spacing: -1px;
+}
+
+.codrops-header h1 {
+	text-align: center;
+
+	font-weight: 800;
+	font-size: 4em;
+	line-height: 1;
+	margin-bottom: 0;
+}
+
+.codrops-header h1 span {
+	text-align: center;
+	display: block;
+	font-size: 50%;
+	font-weight: 400;
+	padding: 0.325em 0 0.5em 0;
+	color: #c3c8cd;
+}
+
+/*button*/
+
+input[type=submit]{
+    color: rgb(196, 28, 91);
+    background-color:#f0efee;
+    position: relative;
+     left: 20px;
+  
+  text-decoration: none;
+  
+  line-height: 20px;
+  height: 40px;
+  padding: 0 20px;
+  margin: 0;
+  display: inline-block;
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition-property: all;
+          transition-property: all;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+
+a {
+	color: rgb(196, 28, 91);
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #74777b;
+}
+
+
+.g-recaptcha{
+	margin:auto;
+	
+	text-align: -webkit-center;
+}
+
+.select{
+	float:relative;
+	right:5px;
+    border: 2px solid rgb(196, 28, 91);
+    width:60px;
+    height: 30px;
+}
+.select:focus {
+    border: 3px solid grey;
+}
